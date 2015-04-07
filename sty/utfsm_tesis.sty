@@ -3,6 +3,14 @@
 %-% Estilo de Tesis de la Universidad Técnica Federico Santa María
 %-% Departamento de Informática.
 %-% Valparaíso, Chile
+%-% Last edit: 07 Abril 2015
+%-% Last edit by: Victor Gonzalez Rodriguez
+%-% Comment: Se cambio de \include a \input
+%
+% Modificado de:
+%-% Estilo de Tesis de la Universidad Técnica Federico Santa María
+%-% Departamento de Informática.
+%-% Valparaíso, Chile
 %-% Last edit: 05 Octubre 2012
 %-% Last edit by: Felipe Calderón Baeza
 %
@@ -382,16 +390,16 @@ con el estilo de documento `report'}{Usted debería leer la documentación de UTFS
             \end{flushright}
             \newpage
             \typeout{Agradecimientos}
-            \include{\@ack}
+            \input{\@ack}
         \fi
     \fi
     {
     \typeout{Resumen}
-    \include{\@resumenesp}
+    \input{\@resumenesp}
     }
     {
     \typeout{Abstract}
-    \include{\@resumening}
+    \input{\@resumening}
     }
     \iffront@pages\tableofcontents\else\addtocounter{page}{1}\fi
     \newpage
@@ -404,7 +412,7 @@ con el estilo de documento `report'}{Usted debería leer la documentación de UTFS
         \newpage
     \fi
     {\typeout{Abreviaciones}
-     \include{\@abreviaciones}
+     \input{\@abreviaciones}
      }
 }
 
